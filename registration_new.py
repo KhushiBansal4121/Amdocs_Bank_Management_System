@@ -178,4 +178,13 @@ butequal=Button(window,padx=32,height= -1,pady=14,bd=2,bg="powder blue",
 butequal.place(x=1000,y= 30)   
 changeOnHover(butequal, "yellow", "skyblue1")
 
+class Account_Number() :
+        AccountNumber = 9 
+        def __init__(self) :
+                Account_Number.AccountNumber = Account_Number.AccountNumber + 1
+                self.account_number = Account_Number.AccountNumber 
+
+object1 = Account_Number() 
+print(object1.account_number)
+
 window.mainloop()
