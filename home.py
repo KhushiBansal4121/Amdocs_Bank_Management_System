@@ -62,6 +62,23 @@ butequal4=Button(window,padx=32,pady=14,bd=2,bg="skyblue1",
                 command=ministatement,width=17,text="MINI STATEMENT",font=("Courier New",18,"bold")) 
 butequal4.place(x=75,y=500)  
 
+class Account_Number() :
+    AccountNumber = 9 
+    def __init__(self) :
+        Account_Number.AccountNumber = Account_Number.AccountNumber + 1
+        self.account_number = Account_Number.AccountNumber 
+
+class Transaction_Id(Account_Number) :
+    TransactionId = 9
+    def __init__(self) :
+        Transaction_Id.TransactionId = Transaction_Id.TransactionId + 1
+        Account_Number.__init__(self)
+        # super.__init__(self)
+        self.transaction_id = int(str(TransactionID) + str(account_number)[8:])
+
+object1 = Transaction_Id()
+print(object1.transaction_id)
+        
 
 
 changeOnHover(butequal1, "yellow", "skyblue1")
